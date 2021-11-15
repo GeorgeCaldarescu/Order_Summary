@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-}
 
 :root{
     --pale_blue: hsl(225, 100%, 94%);
@@ -17,4 +14,104 @@ html{
     --desaturated: hsl(224, 23%, 55%);
     --dark: hsl(223, 47%, 23%);
 }
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: var(--pale_blue);
+}
+
+
+.hero img{
+    width: 70vmin;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.container{
+    background-color: white;
+    margin: 0 auto;
+    width: 70vmin;
+    margin-top: 5em ;
+    border-radius: 20px;
+    height: 85vh;
+}
+
+.text{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--dark);
+
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturated);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.amount{
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 80%;
+    background-color: var(--very_pale);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.change{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--bright_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change:hover{
+    text-decoration: none;
+    color: var(--desaturated);
+}
+
+h2{
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    margin-right: 150px;
+    font-weight: 700;
+}
+
+h3{
+    margin-right: 150px;
+    color: var(--desaturated);
+}
+
+.buttons{
+    display:flex;
+    width: 100%;
+    color: red;
+    margin: 0 auto;
+}
+
+
+
 

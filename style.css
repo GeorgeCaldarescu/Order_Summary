@@ -13,6 +13,7 @@
     --very_pale: hsl(225, 100%, 98%);
     --desaturated: hsl(224, 23%, 55%);
     --dark: hsl(223, 47%, 23%);
+    --active: #766CF1;
 }
 
 body{
@@ -32,16 +33,18 @@ body{
 .container{
     background-color: white;
     margin: 0 auto;
-    width: 70vmin;
-    margin-top: 5em ;
+    max-width: 70vmin;
+    margin-top: 2em ;
     border-radius: 20px;
-    height: 85vh;
+    padding-bottom: 2em;
 }
 
 .text{
     margin-top: 2rem;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 h1{
@@ -55,7 +58,7 @@ p{
     font-size: 16px;
     font-weight: 500;
     color: var(--desaturated);
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
@@ -88,7 +91,7 @@ p{
 
 .change:hover{
     text-decoration: none;
-    color: var(--desaturated);
+    color: var(--active);
 }
 
 h2{
@@ -105,11 +108,68 @@ h3{
     color: var(--desaturated);
 }
 
-.buttons{
+.btn{
     display:flex;
-    width: 100%;
-    color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    width: 70%;
+}
+
+button{
+    /* display: inline-block; */
+    width: 100%;
+    background-color: var(--bright_blue);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--active);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 764px){
+    .container{
+        margin: 0 auto;
+        max-width: 90vmin;
+        margin-top: 2em ;
+        /* border-radius: 20px; */
+        padding-bottom: .5em;
+        /* max-height: 90vh; */
+    }
+
+    .hero img{
+        width: 90vmin;
+    }
+
+    .text{
+        max-width: 50%;
+        /* color: red; */
+    }
+
+    .amount{
+        margin: 0 auto;
+        border-radius: 2px;
+        /* width: 80%; */
+        background-color: var(--very_pale);
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    h2, h3{
+        font-size: 16px;
+    }
 }
 
 

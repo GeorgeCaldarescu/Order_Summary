@@ -24,7 +24,7 @@ main {
   width: 90%;
   margin: auto;
   margin-top: 6rem;
-  background-color: var(--very_pale);
+  background-color: white;
   border-radius: 2rem;
   box-shadow: hsla(225, 42%, 61%, 0.5) 5px 5px 10px;
 }
@@ -59,7 +59,6 @@ main {
   font-weight: 500;
   color: var(--desaturated);
   text-align: center;
-  /* margin-top: 1rem; */
 }
 
 .plan {
@@ -67,7 +66,11 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 2rem; */
+  background-color: var(--very_pale);
+  padding: 1rem;
+  width: 120%;
+  align-self: center;
+  border-radius: 0.5rem;
 }
 
 .plan--annual h3 {
@@ -83,7 +86,7 @@ main {
   color: var(--desaturated);
 }
 
-.change {
+.plan a {
   color: var(--bright_blue);
 }
 
@@ -131,4 +134,32 @@ main {
 
 .attribution a:hover {
   color: var(--bright_blue);
+}
+
+/* Media query */
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: var(--pale_blue);
+    background-repeat: no-repeat;
+  }
+
+  main {
+    width: 30%;
+    margin: auto;
+    margin-top: 6rem;
+  }
+
+  .plan--annual {
+    flex: 1;
+    margin-left: 1rem;
+  }
+
+  .attribution {
+    margin-top: 3.5rem;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
 }

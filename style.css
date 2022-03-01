@@ -143,6 +143,7 @@ main {
     background-image: url(./images/pattern-background-desktop.svg);
     background-color: var(--pale_blue);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   main {

@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="hero">
-      <img src="./images/illustration-hero.svg" alt="">
-    </div>
-    
-    <div class="text">
-      <h1>Order Summary</h1>
+    <title>Frontend Mentor | Order summary card</title>
 
-      <p>You can now listen to millions of songs, audiobooks, and  podcasts on any device anywhere you like!</p>
-    </div>
-    <div class="amount">
-      <img src="./images/icon-music.svg" alt="">
-      <div class="wrap">
-        <h2>Annual Plan</h2>
-        <h3>$59.99/year</h3>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./images/illustration-hero.svg" alt="" class="header--img" />
+      </header>
+      <div class="container">
+        <h1>Order Summary</h1>
+        <p class="container--text">
+          You can now listen to millions of songs, audiobooks and podcast on any
+          device anywhere you like!
+        </p>
+        <div class="plan">
+          <img src="./images/icon-music.svg" alt="" class="plan--img" />
+          <div class="plan--annual">
+            <h3>Annual Plan</h3>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#" aria-label="change plan">Change</a>
+        </div>
+        <button class="btn" aria-label="Proceed to payment">
+          Proceed to Payment
+        </button>
+        <a href="#" class="cancel">Cancel Order</a>
       </div>
-      <a href="#" aria-label = "change plan" class = "change">Change</a>
-    </div>
-    <div class="btn">
-      <button>Proced to order</button>
-      <a href="#" aria-label="cancel order">Cancel Order</a>
-    </div>
+    </main>
+  </body>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">George Caldarescu</a>.
   </div>
-</body>
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
-</div>
 </html>

@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
 }
 main {
-  width: 90%;
+  width: 20rem;
   margin: auto;
   margin-top: 6rem;
   background-color: white;
@@ -29,7 +29,7 @@ main {
   box-shadow: hsla(225, 42%, 61%, 0.5) 5px 5px 10px;
 }
 
-.header--img {
+.box--img {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   width: 100%;
@@ -144,12 +144,6 @@ main {
     background-color: var(--pale_blue);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  main {
-    width: 30%;
-    margin: auto;
-    margin-top: 6rem;
   }
 
   .plan--annual {
